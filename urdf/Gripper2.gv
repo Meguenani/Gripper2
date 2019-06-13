@@ -1,0 +1,14 @@
+digraph G {
+node [shape=box];
+"base_link" [label="base_link"];
+"Mors_prismatic1_Link" [label="Mors_prismatic1_Link"];
+"Mors_prismatic2_Link" [label="Mors_prismatic2_Link"];
+"Mors_prismatic3_Link" [label="Mors_prismatic3_Link"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"base_link" -> "Mors_prismatic1_joint" [label="xyz: 0.0014158 -0.020952 0.0995 \nrpy: 1.5708 5.55112e-17 0.5236"]
+"Mors_prismatic1_joint" -> "Mors_prismatic1_Link"
+"base_link" -> "Mors_prismatic2_joint" [label="xyz: 0.017437 0.011702 0.0995 \nrpy: 1.5708 2.77556e-17 2.618"]
+"Mors_prismatic2_joint" -> "Mors_prismatic2_Link"
+"base_link" -> "Mors_prismatic3_joint" [label="xyz: -0.018853 0.00925 0.0995 \nrpy: 1.5708 -0 -1.5708"]
+"Mors_prismatic3_joint" -> "Mors_prismatic3_Link"
+}
